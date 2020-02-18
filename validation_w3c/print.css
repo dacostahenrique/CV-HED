@@ -1,0 +1,90 @@
+/* Display page flex colonne et non row
+   -------------------------------------*/
+
+#bloc_page
+
+{ 
+display: flex; 
+flex-direction: column;
+flex:1;
+text-align: justify;
+width: auto;
+
+}
+
+/* Bandeau vertical gauche passant en mode affichage colonne en haut
+   ------------------------------------------------------------------*/
+
+#bandeau_vertical_gauche
+{
+	width: auto;
+	height: 1000px;
+}
+
+#nom_bandeau /* Affichage Nom-Prénom-Fonction en haut du bandeau jaune, tout en haut du CV*/
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+}
+
+#ma_photo
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#nom_bandeau, #contact, #a_propos, #loisirs 
+{
+	width: 100%;
+}
+
+/* Bloc CV
+   -------*/
+
+#nom /* Suppresion affichage Nom-Prénom-Fonction dans bloc CV*/
+{
+	display: none;
+}
+
+#cv
+{
+	width: auto;
+	height: auto;
+}
+
+.date /* Bloc Mon expérience - Affichage dates et description emploi en colonne et non en row*/ 
+{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+
+.elemnent:nth-child(1)
+{
+	width: 100%;
+	height: 10px
+		
+}
+
+.element:nth-child(2)
+{
+	width: 100%;
+	height: 20px;
+}
+	
+img .boxe
+
+{
+	page-break-after: always;
+}
+
+
+
+ 
+
+
+

@@ -1,0 +1,188 @@
+
+ 
+@font-face 
+{
+font-family: 'fontleroybrownregular';
+    src: url('FontleroyBrown-webfont.eot');
+    src: url('FontleroyBrown-webfont.eot?#iefix') format('embedded-opentype'),
+         url('FontleroyBrown-webfont.woff2') format('woff2'),
+         url('FontleroyBrown-webfont.woff') format('woff'),
+         url('FontleroyBrown-webfont.ttf') format('truetype'),
+         url('FontleroyBrown-webfont.svg#fontleroybrownregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+	font-family: 'fontleroybrownregular', Arial, serif;
+	font-size: 0.8em;
+	border: 5px solid black;
+}
+ 
+#bloc_page
+
+{ 
+display: flex; 
+flex-direction: column;
+flex:1;
+text-align: justify;
+width: auto;
+
+}
+
+#bandeau_vertical_gauche
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	background-color: rgb(255, 255, 102);
+	border-right: 0.5px solid green;
+	width: auto;
+	justify-content: space-between;
+}
+
+.nom
+{
+	color: rgb(255, 204, 0);
+}
+ 
+.ec
+{
+	color: black;
+	font-size: 15px;
+}
+
+.dev
+{
+	border-bottom: 2px solid rgb(255, 204, 0);
+}
+
+#ma_photo
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+#cv
+{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	text-align: justify;
+	color: blue;
+	border :10px;
+	width: auto;
+	height: auto;
+}
+
+
+.date
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: auto;
+}
+
+
+.elemnent:nth-child(1)
+{
+	width: 100%;
+	height: 10px
+	
+	
+}
+
+.element:nth-child(2)
+{
+	width: 100%;
+	height: 20px;
+}
+	
+
+.texte
+{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+
+h2
+{
+	border-bottom: 1px solid green;
+	color: black;
+}
+
+h1
+{
+	color: black;
+}
+
+ul
+{
+	color: blue;
+	text-align: justify;
+}
+
+#nom_bandeau
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom:; none;
+}
+
+#nom
+{
+	display: none;
+}
+ 
+.ec
+{
+	color: black;
+	font-size: 15px;
+}
+
+.dev
+{
+	border-bottom: 2px solid rgb(255, 204, 0);	
+
+}
+
+img
+{
+	border-radius: 100px;
+	border: 2px solid black;
+}
+
+
+#contact h1, #a_propos h1, #loisirs h1
+{
+	background: gray;
+	color: white;
+	padding: none;
+	text-align: center;
+	
+}
+
+#nom_bandeau, #contact, #a_propos, #loisirs 
+{
+	width: 100%;
+}
+
+.course, .boxe
+{
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	border: 3px solid black;
+	border-radius: 50px;
+	background-color: rgb(255, 255, 102);
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+

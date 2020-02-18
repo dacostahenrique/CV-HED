@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8" />
+
+         <!-- Création de deux feuilles de styles css-> Affichage standard - Affichage petite résolution avec un seul breakpoint à 1280 px-->
+         <link rel="stylesheet" href="standard.css" />
+         <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite.css" />
+         <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+
+         <!--Création d'un lien vers le site Font Awesome pour utilisation en page html des icônes utilisés dans le corps du CV-->
+         <script src="https://kit.fontawesome.com/ed4e83e54e.js" crossorigin="anonymous"></script>
+
+        <title>CV de Henrique DA COSTA</title>
+
+    </head>
+
+    <body>
+
+        <!-- Décomposition du CV en deux parties : bandeau vertical jaune de couleur jaune et corps du CV de couleur blanche avec utilisation de Flexbox-->
+
+        <div id="bloc_page">
+
+            <!-- PREMIERE PARTIE - Composition du bandeau vertical en 4 blocs [photo-contact-a propos-loisirs] en version standard en disposition colonne. Un cinquième élément est ajouté en petite résolution [Nom, Prénom et fonction] qui sera masqué en version standard-->
+            
+
+            <section id="bandeau_vertical_gauche">
+
+                <div id="nom_bandeau"> <!-- Premier bloc en version petite résolution-->
+
+                    <h1>Henrique <spam class="nom"><strong>DA COSTA</strong></spam></h1>
+
+                    <p class="ec"><strong>Consultant-formateur, <span class="dev">Dével</span>oppeur web freelance</strong></p>
+         
+                </div>
+
+                <div id="ma_photo"> <!--Premier bloc en version standard- Deuxième bloc en version petite résolution-->
+
+                    <figure id="photo"><a href="images/photo.jpg">
+                        <img  class="ma_photo" src="images/photo_mini.jpg" alt="Photo Henrique Da Costa" title="Cliquer pour agrandir"></a>        
+                    </figure>
+                </div>
+
+                <div id="contact"> <!-- Deuxième bloc en version standard - Troisième bloc en version petite résolution-->
+
+                        <h1>CONTACT</h1>
+
+                        <div class="texte">
+                        <p><strong>Adresse</strong><br/>
+                        5, rue Léger Gauthier<br/>
+                        63450 Saint-Amant-Tallende<br/></p>
+
+                        <p><strong>Téléphone</strong><br/><a href="tel:0628337932">
+                        06 28 33 79 32</a></p>
+
+                        <p><strong>Email</strong><br/><a href="mailto:henrique.dacosta@orange.fr">
+                        henrique.dacosta@orange.fr</a></p>
+                        </div>
+
+                </div>
+
+                <div id="a_propos"> <!-- Troisième bloc en version standard - Quatrième bloc en version petite résolution-->
+
+                    <h1>A PROPOS DE MOI</h1>
+
+                    <div class="texte">
+                    <P>Formé à la comptabilité et au droit, je développe de nouvelles compétences en développement web.</p>
+                    <p>Trés intéressé par les technologies digitales au service de la pédagogie, je développe une plateforme d'elearning spécialisée sur les métiers de la finance et du droit.</p>
+                    </div>
+
+                </div>
+
+                <div id="loisirs"> <!-- Quatrième bloc en version standard - Cinquième bloc en version petite résolution-->
+
+                    <h1>LOISIRS</h1>
+
+                    <p id="icons"><img class="course" src="images/course.png" alt="Course à pied" title="Course à pied" /><img  class="boxe" src="images/boxe.png" alt="Boxe française" title="Boxe française" /></p>
+
+                </div>
+
+            </section>
+
+            <section id="cv"> <!-- DEUXIEME PARTIE - Composition du corps du CV-->
+                
+                <article id="nom"> <!-- Nom, Prénom et fonction - Affiché en version standard - Masqué en version petite résolution-->
+
+    	            <h1>Henrique <spam class="nom"><strong>DA COSTA</strong></spam></h1>
+
+                    <p class="ec">Consultant-formateur, <span class="dev">Dével</span>oppeur web freelance</p><br/>
+         
+                </article> 
+                        
+                <article id="experiences"> <!-- Rubrique expériences -->
+
+                    <h2><span style="color: #ffcc00;"><i class="fas fa-briefcase"></i></span> Mon expérience</h2>
+
+                    <div id="mon_experience">
+
+                        <ul id="experience_dates">
+
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="far fa-dot-circle fa-sm" aria-hidden="true"></i></span><strong> Depuis janvier 2017</strong></p><p class="element">Consultant-formateur freelance.</p></li><br/>
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Juillet 2018 - Février 2019</strong></p><p class="element">Directeur de 2 cabinets d'expertise comptable</em> à Clermont-Ferrand et Moulins (Groupe Cegeco). Utilisation des logiciels Agiris.</p></li><br/>
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/9/2016 au 31/12/2016</strong></p><p class="element">Directeur technique d'un cabinet</em> de 25 collaborateurs à Mende (Groupe AGC 48). Utilisation des logiciels ACD et DIA.</p></li><br/>
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/1/2002 au 31/0/2016</strong></p><p class="element"><em>Consultant formateur</em> et expert-comptable indépendant. Utilisation des logiciels Sage.</p></li><br/>
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/12/1994 au 31/8/2002</strong></p><p class="element"><em>Expert-commptable et commissaire aux comptes</em> salarié en cabinet (Groupe CHD).</p></li><br/>
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> 1985 - 1994</strong></p><p class="element">Expériences diverses dont <em>4 ans en qualité de contremaître</em> en charge d'une équipe de 10 ouvriers dans une usine fabriquant du carrelage (Groupe Carofrance).</p></li>  
+
+                        </ul>    
+                    </div>                 
+                    
+                </article><br/>
+
+                <article id="competences"> <!--Rubrique compétences-->
+
+                    <h2><span style="color: #ffcc00;"><i class="fas fa-briefcase"></i></span> Mes compétences</h2>
+
+                    <ul>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Pédagogie. Formation à destination des professionnels du monde de la comptabilité et de la finance.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Comptabilité et consolidation.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Normes comptables internationales IFRS</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Droit de l'entreprise, fiscalité et droit des affaires.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Développement web.</li>
+                    </ul>
+
+                </article>
+                
+                <article id="formation"> <!-- Rubrique formation-->
+
+                    <h2><span style="color: #ffcc00;"><i class="fas fa-graduation-cap"></i></span> Ma formation</h2>
+
+                    <ul>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Titre Bac +2 de développeur web : <strong>2020</strong>.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Master Droit des affaires et fiscalité : <strong>2006</strong>.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> DEA Sciences de gestion : <strong>2004</strong>.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Diplôme d'expertise comptable (DEC) : <strong>1999</strong>.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Maîtrise de droit privé : <strong>1998</strong>.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> DUT Mesures Physiques : <strong>1984</strong>.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Bac D : <strong>1982</strong>.</li>
+                    </ul>
+                </article>
+                
+                <article id="langues"> <!-- Rubrique langues-->
+
+                    <h2><span style="color: #ffcc00;"><i class="fas fa-globe"></i></span> Langues</h2>
+
+                     <ul> 
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Anglais : titulaire du Cambridge first certificate.</li>
+                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Portugais : langue maternelle.</li>
+                    </ul>
+
+                </article>
+
+            </section>
+        </div>
+    </body>
+                
+                    
