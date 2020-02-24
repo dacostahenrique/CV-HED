@@ -1,0 +1,23 @@
+/* Bloc REcommandations - Affichage  en colonne et non en row*/ 
+
+.reco
+{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	font-size: 0.95em;
+}
+
+ .reco__disp:nth-child(1)
+{
+	width: 100%;
+		
+}
+
+ .reco__disp:nth-child(2)
+{
+	width: 100%;
+		
+}
+
+  

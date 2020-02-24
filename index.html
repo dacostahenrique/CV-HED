@@ -3,10 +3,13 @@
     <head>
          <meta charset="utf-8" />
 
-         <!-- Création de deux feuilles de styles css-> Affichage standard - Affichage petite résolution avec un seul breakpoint à 1280 px-->
+         <meta name="viewport" content="width=320, initial-scale=1">
+         <!--<meta name="viewport" content="width=device-width, initial-scale=1">--><!--Même résultat que ci-dessus-->
+
+         <!-- Création de 3 feuilles de styles css-> Affichage standard - Affichage petite résolution avec un  breakpoint à 1280 px - Affichage medium pour la rubrique Mes recommandations seule entre 320 et 700 px -->
          <link rel="stylesheet" href="standard.css" />
          <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite.css" />
-         <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+         <link rel="stylesheet" media ="screen and (min-width : 320px) and (max-width: 700px)" href="medium.css"/>
 
          <!--Création d'un lien vers le site Font Awesome pour utilisation en page html des icônes utilisés dans le corps du CV-->
          <script src="https://kit.fontawesome.com/ed4e83e54e.js" crossorigin="anonymous"></script>
@@ -100,28 +103,35 @@
 
                         <ul id="experience_dates">
 
-                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="far fa-dot-circle fa-sm" aria-hidden="true"></i></span><strong> Depuis janvier 2017</strong></p><p class="element">Consultant-formateur freelance.</p></li><br/>
-                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Juillet 2018 - Février 2019</strong></p><p class="element"><em>Directeur de 2 cabinets d'expertise comptable</em> à Clermont-Ferrand et Moulins (Groupe Cegeco). Utilisation des logiciels Agiris.</p></li><br/>
-                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/9/2016 au 31/12/2016</strong></p><p class="element"><em>Directeur technique d'un cabinet</em> de 25 collaborateurs à Mende (Groupe AGC 48). Utilisation des logiciels ACD et DIA.</p></li><br/>
-                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/1/2002 au 31/0/2016</strong></p><p class="element"><em>Consultant formateur</em> et expert-comptable indépendant. Utilisation des logiciels Sage.</p></li><br/>
-                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/12/1994 au 31/8/2002</strong></p><p class="element"><em>Expert-commptable et commissaire aux comptes</em> salarié en cabinet (Groupe CHD).</p></li><br/>
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="far fa-dot-circle fa-sm" aria-hidden="true"></i></span><strong> Depuis janvier 2017</strong></p><p class="element">Consultant-formateur freelance.</p></li>
+
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Juillet 2018 - Février 2019</strong></p><p class="element"><em>Directeur de 2 cabinets d'expertise comptable</em> à Clermont-Ferrand et Moulins (Groupe Cegeco). Utilisation des logiciels Agiris.</p></li>
+
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/9/2016 au 31/12/2016</strong></p><p class="element"><em>Directeur technique d'un cabinet</em> de 25 collaborateurs à Mende (Groupe AGC 48). Utilisation des logiciels ACD et DIA.</p></li>
+
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/1/2002 au 31/0/2016</strong></p><p class="element"><em>Consultant formateur</em> et expert-comptable indépendant. Utilisation des logiciels Sage.</p></li>
+
+                            <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> Du 1/12/1994 au 31/8/2002</strong></p><p class="element"><em>Expert-commptable et commissaire aux comptes</em> salarié en cabinet (Groupe CHD).</p></li>
+
                             <li class="date"><p class="element"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span><strong> 1985 - 1994</strong></p><p class="element">Expériences diverses dont <em>4 ans en qualité de contremaître</em> en charge d'une équipe de 10 ouvriers dans une usine fabriquant du carrelage (Groupe Carofrance).</p></li>  
 
                         </ul>    
                     </div>                 
                     
-                </article><br/>
+                </article>
 
                 <article id="competences"> <!--Rubrique compétences-->
 
                     <h2><span style="color: #ffcc00;"><i class="fas fa-briefcase"></i></span> Mes compétences</h2>
 
                     <ul>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Pédagogie. Formation à destination des professionnels du monde de la comptabilité et de la finance.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Comptabilité et consolidation.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Normes comptables internationales IFRS</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Droit de l'entreprise, fiscalité et droit des affaires.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Développement web.</li>
+                        <li><p class="comp"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Pédagogie. Formation professionnelle.</p></li>
+
+                        <li><p class="comp"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Comptabilité et consolidation.</p></li>
+
+                        <li><p class="comp"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Normes comptables internationales IFRS.</p></li>
+
+                        <li><p class="comp"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Fiscalité et droit des affaires.</p></li>
                     </ul>
 
                 </article>
@@ -133,27 +143,44 @@
                     <h2><span style="color: #ffcc00;"><i class="fas fa-graduation-cap"></i></span> Ma formation</h2>
 
                     <ul>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Titre Bac +2 de développeur web : <strong>2020</strong>.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Master Droit des affaires et fiscalité : <strong>2006</strong>.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> DEA Sciences de gestion : <strong>2004</strong>.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Diplôme d'expertise comptable (DEC) : <strong>1999</strong>.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Maîtrise de droit privé : <strong>1998</strong>.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> DUT Mesures Physiques : <strong>1984</strong>.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Bac D : <strong>1982</strong>.</li>
+                        <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : Titre Bac +2 de développeur web.</p></li>
+
+                        <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : Master Droit des affaires et fiscalité.</p></li>
+
+                        <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : DEA Sciences de gestion.</p></li>
+
+                       <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : Diplôme d'expertise comptable (DEC).</p></li>
+
+                        <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : Maîtrise de droit privé.</p></li>
+
+                        <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : DUT Mesures Physiques.</p></li>
+
+                       <li class="form"><p class="form__an"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="dipl"> <strong>2020</strong> : Bac D.</p></li>
                     </ul>
+
                 </article>
                 
                 <article id="langues"> <!-- Rubrique langues-->
 
                     <h2><span style="color: #ffcc00;"><i class="fas fa-globe"></i></span> Langues</h2>
 
-                     <ul> 
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Anglais : titulaire du Cambridge first certificate.</li>
-                        <li><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span> Portugais : langue maternelle.</li>
+                     <ul class="langue"> 
+                        <li class="langues"><p class="lang"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="lang"><strong> Anglais</strong> : Titulaire du Cambridge first certificate.</p></li>
+                        <li class="langues"><p class="lang"><span style="color: #ffcc00;"><i class="fas fa-circle fa-xs"></i></span></p><p class="lang"><strong> Portugais</strong> : Langue maternelle.</p></li>
                     </ul>
 
                 </article>
 
+                <article id="recommmandations"> <!-- Rubrique recommandations-->
+
+                    <h2><span style="color: #ffcc00;"><i class="fas fa-pencil-alt"></i></span> Recommandations</h2>
+
+                    <div class="reco">
+                        <p class="reco__disp"><strong>Inna SHVEDA</strong></br>Avocate</br><em><strong>Téléphone</em> :</strong> 06 10 17 07 51</br>Email : innashveda.avocats@gmail.com</p>
+                        <p class="reco__disp"><strong>Rosebel GROS</strong></br>Chef d'entreprise</br><em><strong>Téléphone</em> :</strong> 06 30 87 78 50</br>Email : rgoffice2018@gmail.com</p>
+                    </div>
+
+                </article>
             </section>
         </div>
     </body>

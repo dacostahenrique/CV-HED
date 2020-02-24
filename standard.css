@@ -56,22 +56,22 @@ height: 100%;
 
 #ma_photo
 {
-	height: 12%;
+	height: 10%;
 }
 
 #contact
 {
-	height: 25%;
+	height: 27%;
 }
 
 #a_propos
 {
-	height: 48%;
+	height: 53%;
 }
 
 #loisirs
 {
-	height: 15%;
+	height: 12%;
 }
 
 /* Photo de Henrique Da Costa en haut du bandeau vertical*/
@@ -175,24 +175,69 @@ img
 {
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .elemnent:nth-child(1)
 {
-	width: 25%;
-	
-	
-}
+	width: 30%;
+}	
 
 .element:nth-child(2)
 {
-	width: 75%;
+	width: 70%;
+}
 
+/* Déclaration d'une flexbox pour la rubrique Recommandations */
+
+.form
+{
+	display: flex;
+	width: 100%;
+}
+
+.dipl
+{
+	margin-left: 10px;
+	text-align: left;
+}
+
+/* Déclaration d'une flexbox pour la rubrique Langues */
+
+.langues
+
+{
+	display: flex;
+	width: 100%;
+}
+
+.lang:nth-child(2)
+{
+	margin-left: 10px;
+	text-align: left;
 }
 
 
-/* Styles des titres et textes des rubriques Mon expérience- Mes compétences - Ma formation - Langues*/
+/* Déclaration d'une flexbox pour la rubrique Recommandations */
+
+.reco
+{
+	display: flex;
+	
+}
+
+.reco__disp:nth-child(1)
+{
+	width: 50%;
+	
+	
+}
+
+.reco__disp:nth-child(2)
+{
+	width: 50%;
+}
+
+/* Styles des titres et textes des rubriques Mon expérience- Mes compétences - Mes comptéences - Ma formation - Langues*/
 
 h2
 {
@@ -208,7 +253,10 @@ ul
 	list-style: none;
 }
 
-
+.comp
+{
+	text-align: left;
+}
 
 
 
