@@ -5,7 +5,7 @@
 
 /* Polices utilisées */
 
-@font-face 
+@font-face
 {
 font-family: 'fontleroybrownregular';
     src: url('FontleroyBrown-webfont.eot');
@@ -26,15 +26,15 @@ body
 
 /* Utilisation de Flexbox pour diviser la page en deux blocs : bandeau vertical et corps du CV
    -------------------------------------------------------------------------------------------*/
- 
+
 #bloc_page
-{ 
-display: flex; 
+{
+display: flex;
 text-align: justify;
 height: 100%;
 }
 
-/* Utilisation de Flexbox à l'intérieur du bloc Bandeau vertival pour disposer les quatres parties du bloc en colomne 
+/* Utilisation de Flexbox à l'intérieur du bloc Bandeau vertival pour disposer les quatres parties du bloc en colomne
    -------------------------------------------------------------------------------------------------------------------*/
 
 #bandeau_vertical_gauche
@@ -44,7 +44,7 @@ height: 100%;
 	background-color: rgb(255, 255, 102);
 	border-right: 0.5px solid green;
 	width: 25%;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 
 #nom_bandeau /* Masquage du bloc Nom-Prénom-Fonction en version d'affichage standard */
@@ -52,7 +52,7 @@ height: 100%;
 	display: none;
 }
 
-/* Hauteur relative de chacun des 4 blocs à l'intérieur du Bandeau vertical gauche*/ 
+/* Hauteur relative de chacun des 4 blocs à l'intérieur du Bandeau vertical gauche*/
 
 #ma_photo
 {
@@ -66,7 +66,7 @@ height: 100%;
 
 #a_propos
 {
-	height: 53%;
+	height: 58%;
 }
 
 #loisirs
@@ -78,7 +78,7 @@ height: 100%;
 
 figure
 {
-	
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -100,7 +100,7 @@ img
 	text-align: center;
 }
 
-#contact, #a_propos, #loisirs 
+#contact, #a_propos, #loisirs
 {
 	width: 100%
 }
@@ -109,7 +109,7 @@ img
 
 .texte
 {
-	
+
 	padding-right: 20px;
 	padding-left: 20px;
 }
@@ -136,7 +136,7 @@ img
 
 
 
-/* Utilisation de Flexbox à l'intérieur du bloc CV pour disposer le  contenu du bloc en colomne 
+/* Utilisation de Flexbox à l'intérieur du bloc CV pour disposer le  contenu du bloc en colomne
    ---------------------------------------------------------------------------------------------*/
 
 #cv
@@ -156,11 +156,12 @@ img
 {
 	color: rgb(255, 204, 0);
 }
- 
+
 .ec
 {
 	color: black;
 	font-size: 15px;
+	font-weight: bold;
 }
 
 .dev
@@ -180,7 +181,7 @@ img
 .elemnent:nth-child(1)
 {
 	width: 30%;
-}	
+}
 
 .element:nth-child(2)
 {
@@ -222,14 +223,14 @@ img
 .reco
 {
 	display: flex;
-	
+
 }
 
 .reco__disp:nth-child(1)
 {
 	width: 50%;
-	
-	
+
+
 }
 
 .reco__disp:nth-child(2)
